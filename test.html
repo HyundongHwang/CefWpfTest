@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function jsFunc(param) {
+            alert("jsFunc param : " + param);
+        }
+
+        this.window.onload = function () {
+            let btn = this.document.getElementById("btnJsToCsharp");
+            btn.onclick = function () {
+                alert("this is JS btnJsToCsharp click function !!!");
+                cbObj.onCallback("hello c#");
+            }
+        }
+    </script>
+</head>
+<body>
+    hello cef
+    <br />
+    <button id="btnJsToCsharp">btnJsToCsharp</button>
+</body>
+</html>
